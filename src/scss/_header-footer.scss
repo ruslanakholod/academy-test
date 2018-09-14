@@ -1,0 +1,35 @@
+@import "_variable";
+
+.top {
+  &--header {
+    position: relative;
+    z-index: 10;
+    top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      text-decoration: none;
+      font-weight: 300;
+      color: $white;
+      font-size: 21px;
+    }
+    &--logo {
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      img {
+        width: 58px;
+        max-width: 100%;
+        margin-right: 14px;
+      }
+    }
+    .button-primary {
+      margin-left: 40px;
+      border-color: $white;
+    }
+  }
+}
