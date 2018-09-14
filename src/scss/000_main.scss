@@ -22,6 +22,7 @@
 @import "_slider";
 @import "_header-footer";
 @import "_advantages";
+@import "_main";
 body {
   margin: 0;
 }
@@ -32,6 +33,7 @@ body {
   box-sizing: border-box;
   font-family: "Hellix", Arial, sans-serif;
   letter-spacing: 1px;
+  font-size: 100%;
 }
 
 .container {

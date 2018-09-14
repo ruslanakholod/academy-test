@@ -2,7 +2,7 @@
 
 .advantages {
   margin-top: -65px;
-  background-color: #f6f2f1;
+  background-color: $main-gray-lighter;
   &--title {
     width: 1233px;
     max-width: 100%;
@@ -40,7 +40,7 @@
       }
     }
     .adv-last {
-      margin: -61px -28px -61px -51px;
+      margin: -61px -20px -61px -51px;
       width: 500px;
       max-width: 100%;
       background-color: #272b30;
