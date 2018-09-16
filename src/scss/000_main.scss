@@ -69,9 +69,11 @@ body {
   border-color: $orange;
 }
 .btn-transparent {
+    color: $orange;
+    border-color: $orange;
   &:hover{
     background-color: $orange;
     color: $white;
-    transition: all 0.3s;
+    transition: all 0.5s;
   }
 }

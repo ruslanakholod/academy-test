@@ -175,3 +175,44 @@
     }
   }
 }
+.partners {
+  margin: 90px 0;
+  &--items {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 70px;
+    .partner-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .partner-item {
+      margin: 0 45px;
+      img {
+        width: auto;
+        height: 100px;
+        margin: 0 auto;
+        filter: grayscale(100%);
+        transition: .1s ease-in-out;
+        &:hover {
+          filter: none;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  &--text {
+    width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    p {
+      margin-bottom: 10px;
+    }
+    a {
+      display: inline-block;
+      margin-top: 50px;
+    }
+  }
+}

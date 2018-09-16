@@ -33,3 +33,183 @@
     }
   }
 }
+.footer {
+  background-color: $main-gray-lighter;
+  &--top {
+    padding-bottom: 130px;
+    &--inner {
+      padding: 0 40px;
+    }
+    &--title {
+      padding-top: 90px;
+      padding-bottom: 40px;
+      font-size: 40px;
+      color: $main-gray;
+    }
+    &--form {
+      .form-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .field__wrap {
+          width: 47%;
+        }
+      }
+      .form-btn {
+        outline: none;
+        cursor: pointer;
+        background-color: transparent;
+      }
+      .field__wrap {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 25px;
+      }
+
+      .field__label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3b424a;
+      }
+      .block {
+        display: block;
+      }
+      .field {
+        width: 100%;
+        display: block;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3b424a;
+        border: none;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: none;
+        padding: 6px 20px;
+        height: 60px;
+        font-weight: 500;
+        outline: none;
+      }
+      .custom-placeholder-active .field {
+      }
+      .custom-placeholder-active .custom-placeholder {
+        padding-top: 0px;
+        margin-top: -25px;
+        padding-left: 10px;
+      }
+      .custom-placeholder {
+        position: absolute;
+        top: 0;
+        padding-top: 20px;
+        padding-left: 20px;
+        background-color: transparent;
+        transition: all .5s ease;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: $main-gray;
+      }
+      .custom-placeholder  span {
+        color: $orange;
+      }
+      .custom-placeholder-active .textarea-custom-placeholder{
+        top: 2px;
+      }
+    }
+    select {
+      width: 100%;
+      font-size: 16px;
+      line-height: 19px;
+      border: none;
+      outline: none;
+      color: #3b424a;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: none;
+      padding: 6px 20px;
+      height: 60px;
+      font-weight: 500;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      position: relative;
+      display: inline-block;
+    }
+    .select:after {
+      content: url("../images/down-arrow.svg");
+      position: absolute;
+      right: 18px;
+      top: 20px;
+    }
+    .form--bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      .form-checkbox {
+        display: flex;
+        flex-direction: column;
+        color: #4c4e52;
+        font-size: 16px;
+        div {
+          margin-top: 13px;
+        }
+        label {
+          font-weight: 300;
+        }
+        input[type="checkbox"] {
+          position: absolute;
+          left: -9999px;
+        }
+        input[type="checkbox"] + label:before {
+            content: "";
+            border: 2px solid #c4bcb7;
+            border-radius: 3px;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url("../images/yes.svg") 50% 50% no-repeat;
+            margin-bottom: -3px;
+            margin-right: 13px;
+        }
+        input[type="checkbox"]:checked + label:before {
+            background-position: 0 -32px;
+        }
+        .txt-orange {
+          color: $orange;
+        }
+      }
+    }
+  }
+  &--bottom {
+    border-top: 3px solid $orange;
+    &--inner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 0;
+    }
+    &--text {
+      max-width: 1300px;
+      width: 100%;
+      color: #4c4e52;
+      font-size: 16px;
+    }
+    &--links {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      li {
+        list-style-type: none;
+        margin-left: 40px;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
