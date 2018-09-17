@@ -51,6 +51,14 @@ body {
     max-width: 750px;
     padding: 0 10px;
   }
+  @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+    max-width: 600px;
+    padding: 0 10px;
+  }
+  @media (max-width: $MOBILE_L - 1px) {
+    max-width: 400px;
+    padding: 0 10px;
+  }
 }
 .txt-bold {
   font-weight: 700;
@@ -83,6 +91,10 @@ body {
   @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
     padding: 6px 18px 9px 18px;
     font-size: 13px;
+  }
+  @media (max-width: $TABLET_START - 1px) {
+    padding: 4px 17px 6px 17px;
+    font-size: 12px;
   }
 }
 .btn-painted {

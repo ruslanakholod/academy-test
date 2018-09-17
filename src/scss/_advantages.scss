@@ -24,6 +24,11 @@
       margin-bottom: 50px;
       font-size: 18px;
     }
+    @media (max-width: $TABLET_START - 1px) {
+      padding-top: 90px;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
     p {
       margin-bottom: 10px;
     }
@@ -36,6 +41,12 @@
     padding-bottom: 141px;
     @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
       justify-content: space-around;
+    }
+    @media (max-width: $TABLET_START - 1px)  {
+      padding-bottom: 70px;
+    }
+    @media (max-width: $MOBILE_L)  {
+      justify-content: center;
     }
     .adv-item {
       max-width: 400px;
@@ -53,6 +64,12 @@
       }
       @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
         max-width: 300px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 20px;
+      }
+      @media (max-width: $TABLET_START - 1px)   {
+        max-width: 200px;
         margin-bottom: 30px;
         font-size: 15px;
         line-height: 20px;
@@ -77,10 +94,20 @@
           margin-bottom: 30px;
           font-size: 15px;
         }
+        @media (max-width: $TABLET_START - 1px)   {
+          max-width: 200px;
+          margin-bottom: 15px;
+          font-size: 15px;
+          padding: 0;
+        }
         img {
           @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
             width: 45px;
           }
+          @media (max-width: $TABLET_START - 1px)   {
+            width: 40px;
+          }
+
         }
       }
       span {
@@ -97,6 +124,9 @@
         }
         @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
           margin: 12px 0;
+        }
+        @media (max-width: $TABLET_START - 1px)   {
+          margin: 10px 0;
         }
       }
     }
@@ -119,6 +149,10 @@
         margin: -20px 0 0 0;
         max-width: 300px;
       }
+      @media (max-width: $TABLET_START - 1px)   {
+        margin: -20px 0 0 0;
+        max-width: 200px;
+      }
       .adv-ls {
           margin: 61px 28px 61px 51px;
           @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
@@ -130,8 +164,15 @@
           @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
             margin: 20px;
           }
+          @media (max-width: $TABLET_START - 1px)   {
+            margin: 20px;
+            max-width: 170px;
+          }
         p {
           margin-bottom: 40px;
+          @media (max-width: $TABLET_START - 1px)   {
+            margin-bottom: 10px;
+          }
         }
       }
     }

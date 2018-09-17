@@ -23,6 +23,12 @@
         padding-top: 40px;
         font-size: 18px;
       }
+      @media (max-width: $TABLET_START - 1px) {
+        max-width: 600px;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        font-size: 16px;
+      }
       p {
         margin-bottom: 10px;
       }
@@ -30,6 +36,9 @@
     .reverse {
       flex-direction: row-reverse !important;
       @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        flex-direction: column !important;
+      }
+      @media (max-width: $TABLET_START - 1px)   {
         flex-direction: column !important;
       }
       .help--item--advice::after {
@@ -43,6 +52,15 @@
           border-bottom: 20px solid $main-gray-lighter;
           border-right: 20px solid $main-gray-lighter;
         }
+        @media (max-width: $TABLET_START - 1px)   {
+          content: "";
+          top: -30px;
+          left: 60px;
+          border-right: 0;
+          border: 15px solid transparent;
+          border-bottom: 15px solid $main-gray-lighter;
+          border-right: 15px solid $main-gray-lighter;
+        }
       }
       .help--item--advice::before {
         content: "";
@@ -53,6 +71,9 @@
         border-top: 40px solid $main-gray-lighter;
         border-left: 40px solid $main-gray-lighter;
         @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          display: none;
+        }
+        @media (max-width: $TABLET_START - 1px)   {
           display: none;
         }
       }
@@ -66,6 +87,10 @@
       @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
         flex-direction: column;
         margin-bottom: 70px;
+      }
+      @media (max-width: $TABLET_START - 1px)   {
+        flex-direction: column;
+        margin-bottom: 30px;
       }
       &--person {
         display: flex;
@@ -85,6 +110,9 @@
           @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
             width: 170px;
           }
+          @media (max-width: $TABLET_START - 1px)   {
+            width: 140px;
+          }
         }
         .help-person-name {
           max-width: 350px;
@@ -100,6 +128,9 @@
           @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
             font-size: 16px;
           }
+          @media (max-width: $TABLET_START - 1px)   {
+            font-size: 16px;
+          }
         }
         .help-person-position {
           max-width: 230px;
@@ -113,6 +144,10 @@
             font-size: 14px;
           }
           @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+            font-size: 12px;
+            line-height: 17px;
+          }
+          @media (max-width: $TABLET_START - 1px)   {
             font-size: 12px;
             line-height: 17px;
           }
@@ -133,6 +168,10 @@
           margin-top: 40px;
           right: 0;
         }
+        @media (max-width: $TABLET_START - 1px)   {
+          margin-top: 20px;
+          right: 0;
+        }
         .advice--inner {
           padding: 64px 100px 63px 85px;
           @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
@@ -143,6 +182,9 @@
           }
           @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
             padding: 23px 60px 23px 45px;
+          }
+          @media (max-width: $TABLET_START - 1px)   {
+            padding: 20px 30px 23px 40px;
           }
           &--title {
             font-size: 40px;
@@ -156,6 +198,10 @@
             @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
               font-size: 18px;
               line-height: 40px;
+            }
+            @media (max-width: $TABLET_START - 1px)   {
+              font-size: 16px;
+              line-height: 38px;
             }
           }
           &--quote {
@@ -177,6 +223,12 @@
               font-size: 15px;
               line-height: 21px;
             }
+            @media (max-width: $TABLET_START - 1px)   {
+              margin-top: 5px;
+              font-size: 13px;
+              line-height: 18px;
+              margin-bottom: 10px;
+            }
             img {
               position: absolute;
               width: 27px;
@@ -194,6 +246,10 @@
                 width: 18px;
                 left: -20px;
               }
+              @media (max-width: $TABLET_START - 1px)   {
+                width: 15px;
+                left: -18px;
+              }
             }
           }
           &--more {
@@ -208,6 +264,9 @@
               font-size: 15px;
             }
             @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+              font-size: 15px;
+            }
+            @media (max-width: $TABLET_START - 1px)   {
               font-size: 15px;
             }
           }
@@ -229,6 +288,14 @@
           border-bottom: 20px solid $main-gray-lighter;
           border-right: 20px solid $main-gray-lighter;
         }
+        @media (max-width: $TABLET_START - 1px)   {
+          top: -30px;
+          left: 60px;
+          border-right: 0;
+          border: 15px solid transparent;
+          border-bottom: 15px solid $main-gray-lighter;
+          border-right: 15px solid $main-gray-lighter;
+        }
       }
     }
     .more-usecase {
@@ -246,6 +313,11 @@
         font-size: 15px;
         margin-bottom: 50px;
       }
+      @media (max-width: $TABLET_START - 1px)   {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        font-size: 15px;
+      }
       a {
         text-decoration: none;
         color: $orange;
@@ -257,7 +329,11 @@
     &--inner {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
+      @media (max-width: $TABLET_START - 1px)   {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
     }
     &--fact {
       max-width: 300px;
@@ -272,7 +348,11 @@
       }
       @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
         max-width: 180px;
-        padding: 30px;
+        padding: 30px 0;
+      }
+      @media (max-width: $TABLET_START - 1px)   {
+        max-width: 150px;
+        padding: 10px 0;
       }
       span {
         font-size: 60px;
@@ -289,6 +369,10 @@
           font-size: 25px;
           line-height: 40px;
         }
+        @media (max-width: $TABLET_START - 1px)   {
+          font-size: 20px;
+          line-height: 20px;
+        }
       }
       p {
         font-size: 24px;
@@ -301,6 +385,10 @@
           font-size: 18px;
         }
         @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          font-size: 13px;
+          line-height: 20px;
+        }
+        @media (max-width: $TABLET_START - 1px)   {
           font-size: 13px;
           line-height: 20px;
         }
@@ -321,6 +409,10 @@
         padding-top: 40px;
         margin-bottom: 43px;
       }
+      @media (max-width: $TABLET_START - 1px)   {
+        padding-top: 40px;
+        margin-bottom: 43px;
+      }
       .info-ttl {
         font-size: 40px;
         @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
@@ -331,6 +423,9 @@
         }
         @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
           font-size: 18px;
+        }
+        @media (max-width: $TABLET_START - 1px)   {
+          font-size: 16px;
         }
       }
       p {
@@ -347,6 +442,10 @@
           font-size: 14px;
           line-height: 20px;
         }
+        @media (max-width: $TABLET_START - 1px)   {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
     }
     .courses {
@@ -360,6 +459,9 @@
       @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
         margin-bottom: 60px;
       }
+      @media (max-width: $TABLET_START - 1px)   {
+        margin-bottom: 40px;
+      }
       .course {
         max-width: 450px;
         @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
@@ -370,6 +472,15 @@
         }
         @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
           max-width: 220px;
+        }
+        @media (max-width: $TABLET_START - 1px)   {
+          max-width: 180px;
+        }
+        @media (max-width: $MOBILE_L + 100px)   {
+          max-width: 130px;
+        }
+        @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L + 101px) {
+          max-width: 160px;
         }
         &--title {
           margin-bottom: 15px;
@@ -384,6 +495,10 @@
           @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
             margin-bottom: 10px;
             font-size: 18px;
+          }
+          @media (max-width: $TABLET_START - 1px)   {
+            font-size: 14px;
+            line-height: 16px;
           }
         }
         &--information {
@@ -402,6 +517,11 @@
             font-size: 16px;
             line-height: 20px;
           }
+          @media (max-width: $TABLET_START - 1px)   {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 18px;
+          }
         }
         &--link {
           text-decoration: none;
@@ -417,6 +537,9 @@
           @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
             font-size: 16px;
           }
+          @media (max-width: $TABLET_START - 1px)   {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -430,6 +553,9 @@
   @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
     margin: 50px 0;
   }
+  @media (max-width: $TABLET_START - 1px)   {
+    margin: 25px 0;
+  }
   &--items {
     display: flex;
     flex-direction: column;
@@ -439,6 +565,9 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
+      @media (max-width: $TABLET_START - 1px)   {
+        flex-wrap: wrap;
+      }
     }
     .partner-item {
       margin: 0 45px;
@@ -446,7 +575,7 @@
         margin: 0 35px;
       }
       @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
-        margin: 0 20px;
+        margin: 0 10px;
       }
       img {
         width: auto;
@@ -459,6 +588,9 @@
         }
         @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
           height: 60px;
+        }
+        @media (max-width: $TABLET_START - 1px)   {
+          height: 50px;
         }
         &:hover {
           filter: none;
@@ -483,6 +615,10 @@
       max-width: 600px;
       font-size: 18px;
     }
+    @media (max-width: $TABLET_START - 1px)   {
+      max-width: 400px;
+      font-size: 16px;
+    }
     p {
       margin-bottom: 10px;
     }
@@ -494,6 +630,9 @@
       }
       @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
         margin-top: 20px;
+      }
+      @media (max-width: $TABLET_START - 1px)   {
+        margin-top: 15px;
       }
     }
   }

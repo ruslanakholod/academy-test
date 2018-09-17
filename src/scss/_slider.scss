@@ -25,6 +25,10 @@
       max-width: 550px;
       top: 60px;
     }
+    @media (max-width: $TABLET_START - 1px) {
+      max-width: 300px;
+      top: 40px;
+    }
     &--inner {
       padding-top: 60px;
       font-size: 40px;
@@ -40,6 +44,10 @@
       @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
         font-size: 15px;
         line-height: 23px;
+      }
+      @media (max-width: $TABLET_START - 1px) {
+        font-size: 13px;
+        line-height: 20px;
       }
     }
     h2 {
@@ -72,6 +80,9 @@
       @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
         bottom: 20px;
       }
+      @media (max-width: $TABLET_START - 1px) {
+        bottom: 20px;
+      }
       li {
           position: relative;
           display: inline-block;
@@ -84,6 +95,9 @@
             margin: 0 5px;
           }
           @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+            margin: 0 3px;
+          }
+          @media (max-width: $TABLET_START - 1px) {
             margin: 0 3px;
           }
           button {
@@ -127,6 +141,9 @@
                   @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
                     font-size: 25px;
                   }
+                  @media (max-width: $TABLET_START - 1px) {
+                    font-size: 25px;
+                  }
               }
           }
           &.slick-active button:before {
@@ -146,6 +163,9 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+        justify-content: space-around;
+      }
       &--text {
         max-width: 550px;
         width: 100%;
@@ -154,6 +174,9 @@
         }
         @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
           max-width: 300px;
+        }
+        @media (max-width: $TABLET_START - 1px) {
+          max-width: 160px;
         }
         &--title {
           padding-bottom: 100px;
@@ -170,6 +193,10 @@
             padding-bottom: 40px;
             font-size: 18px;
           }
+          @media (max-width: $TABLET_START - 1px) {
+            padding-bottom: 20px;
+            font-size: 14px;
+          }
         }
         span {
           font-size: 60px;
@@ -185,6 +212,10 @@
             font-size: 30px;
             line-height: 20px;
           }
+          @media (max-width: $TABLET_START - 1px) {
+            font-size: 25px;
+            line-height: 20px;
+          }
         }
         p {
           padding-top: 30px;
@@ -198,6 +229,11 @@
             font-size: 16px;
             line-height: 20px;
           }
+          @media (max-width: $TABLET_START - 1px) {
+            padding-top: 20px;
+            font-size: 13px;
+            line-height: 20px;
+          }
           q {
             quotes: "\201c" "\201c";
             margin-left: -10px;
@@ -206,6 +242,9 @@
             }
             @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
               margin-left: -6px;
+            }
+            @media (max-width: $TABLET_START - 1px) {
+              margin-left: -5px;
             }
           }
         }
@@ -220,6 +259,9 @@
           }
           @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
             width: 250px;
+          }
+          @media (max-width: $TABLET_START - 1px) {
+            width: 200px;
           }
         }
       }
@@ -243,6 +285,9 @@
       @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
         bottom: 20px;
       }
+      @media (max-width: $TABLET_START - 1px)  {
+        bottom: 15px;
+      }
       li {
           position: relative;
           display: inline-block;
@@ -255,6 +300,9 @@
             margin: 0 5px;
           }
           @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+            margin: 0 3px;
+          }
+          @media (max-width: $TABLET_START - 1px) {
             margin: 0 3px;
           }
           button {
@@ -295,6 +343,9 @@
                     font-size: 25px;
                   }
                   @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+                    font-size: 25px;
+                  }
+                  @media (max-width: $TABLET_START - 1px)  {
                     font-size: 25px;
                   }
               }
@@ -378,6 +429,9 @@
       width: 100%;
       height: 100%;
         display: block;
+        @media (max-width: $TABLET_START - 1px) {
+          width: 768px;
+        }
     }
     &.slick-loading img {
         display: none;

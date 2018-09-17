@@ -18,6 +18,12 @@
     @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
       top: 20px;
     }
+    @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+      top: 10px;
+    }
+    @media (max-width: $MOBILE_L - 1px) {
+      top: 10px;
+    }
     a {
       text-decoration: none;
       font-weight: 300;
@@ -31,6 +37,12 @@
       }
       @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
         font-size: 14px;
+      }
+      @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+        font-size: 12px;
+      }
+      @media (max-width: $MOBILE_L - 1px) {
+        font-size: 12px;
       }
     }
     &--logo {
@@ -46,11 +58,25 @@
         @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
           width: 50px;
         }
+        @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+          width: 35px;
+          margin-right: 9px;
+        }
+        @media (max-width: $MOBILE_L - 1px) {
+          width: 35px;
+          margin-right: 9px;
+        }
       }
     }
     .button-primary {
       margin-left: 40px;
       border-color: $white;
+      @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+        margin-left: 15px;
+      }
+      @media (max-width: $MOBILE_L - 1px) {
+        margin-left: 15px;
+      }
     }
   }
 }
@@ -64,12 +90,24 @@
     @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
       padding-bottom: 60px;
     }
+    @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+      padding-bottom: 40px;
+    }
+    @media (max-width: $MOBILE_L - 1px) {
+      padding-bottom: 40px;
+    }
     &--inner {
       padding: 0 40px;
       @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
         padding: 0 30px;
       }
       @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        padding: 0;
+      }
+      @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+        padding: 0;
+      }
+      @media (max-width: $MOBILE_L - 1px) {
         padding: 0;
       }
     }
@@ -88,6 +126,16 @@
         padding-bottom: 15px;
         font-size: 20px;
       }
+      @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+        padding-top: 20px;
+        padding-bottom: 15px;
+        font-size: 18px;
+      }
+      @media (max-width: $MOBILE_L - 1px) {
+        padding-top: 20px;
+        padding-bottom: 15px;
+        font-size: 18px;
+      }
     }
     &--form {
       .form-row {
@@ -97,9 +145,15 @@
         @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
           flex-direction: column;
         }
+        @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+          flex-direction: column;
+        }
+        @media (max-width: $MOBILE_L - 1px) {
+          flex-direction: column;
+        }
         .field__wrap {
           width: 47%;
-          @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          @media (max-width: $DESKTOP_START - 1px) {
             width: 100%;
           }
         }
@@ -114,6 +168,12 @@
         margin-top: 10px;
         margin-bottom: 25px;
         @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          margin-bottom: 15px;
+        }
+        @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+          margin-bottom: 15px;
+        }
+        @media (max-width: $MOBILE_L - 1px) {
           margin-bottom: 15px;
         }
       }
@@ -150,6 +210,14 @@
           height: 40px;
           font-size: 14px;
         }
+        @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+          height: 40px;
+          font-size: 14px;
+        }
+        @media (max-width: $MOBILE_L - 1px) {
+          height: 40px;
+          font-size: 14px;
+        }
       }
       .custom-placeholder-active .field {
       }
@@ -158,6 +226,12 @@
         margin-top: -25px;
         padding-left: 10px;
         @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          margin-top: -21px;
+        }
+        @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+          margin-top: -21px;
+        }
+        @media (max-width: $MOBILE_L - 1px) {
           margin-top: -21px;
         }
       }
@@ -176,6 +250,14 @@
           padding-top: 16px;
         }
         @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          padding-top: 10px;
+          font-size: 14px;
+        }
+        @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+          padding-top: 10px;
+          font-size: 14px;
+        }
+        @media (max-width: $MOBILE_L - 1px) {
           padding-top: 10px;
           font-size: 14px;
         }
@@ -209,6 +291,12 @@
       @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
         height: 40px;
       }
+      @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+        height: 40px;
+      }
+      @media (max-width: $MOBILE_L - 1px) {
+        height: 40px;
+      }
     }
     .select:after {
       content: url("../images/down-arrow.svg");
@@ -219,6 +307,12 @@
         top: 15px;
       }
       @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        top: 10px;
+      }
+      @media (max-width: $TABLET_START - 1px) and (min-width: $MOBILE_L) {
+        top: 10px;
+      }
+      @media (max-width: $MOBILE_L - 1px) {
         top: 10px;
       }
     }
@@ -237,6 +331,9 @@
           font-size: 14px;
         }
         @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          font-size: 14px;
+        }
+        @media (max-width: $TABLET_START - 1px) {
           font-size: 14px;
         }
         div {
@@ -265,7 +362,7 @@
               width: 14px;
               height: 14px;
             }
-            @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+            @media (max-width: $DESKTOP_START - 1px) {
               width: 12px;
               height: 12px;
             }
@@ -291,7 +388,7 @@
       @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
         padding: 40px 0;
       }
-      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+      @media (max-width: $DESKTOP_START - 1px) {
         padding: 20px 0;
       }
     }
@@ -307,7 +404,7 @@
         max-width: 800px;
         font-size: 14px;
       }
-      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+      @media (max-width: $DESKTOP_START - 1px) {
         font-size: 14px;
       }
     }
@@ -319,10 +416,7 @@
       li {
         list-style-type: none;
         margin-left: 40px;
-        @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
-          margin-left: 20px;
-        }
-        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        @media (max-width: $DESKTOP_L - 1px) {
           margin-left: 20px;
         }
         a {
