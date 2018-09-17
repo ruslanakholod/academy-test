@@ -3,19 +3,46 @@
 .main {
   .help {
     &--title {
-      width: 1233px;
-      max-width: 100%;
+      max-width: 1233px;
+      width: 100%;
       padding-top: 80px;
       margin-bottom: 160px;
       font-size: 40px;
+      @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+        margin-bottom: 100px;
+        font-size: 30px;
+      }
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        max-width: 900px;
+        margin-bottom: 50px;
+        font-size: 25px;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        max-width: 600px;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        font-size: 18px;
+      }
       p {
         margin-bottom: 10px;
       }
     }
     .reverse {
       flex-direction: row-reverse !important;
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        flex-direction: column !important;
+      }
       .help--item--advice::after {
         content: none;
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          content: "";
+          top: -30px;
+          left: 90px;
+          border-right: 0;
+          border: 20px solid transparent;
+          border-bottom: 20px solid $main-gray-lighter;
+          border-right: 20px solid $main-gray-lighter;
+        }
       }
       .help--item--advice::before {
         content: "";
@@ -25,6 +52,9 @@
         border: 40px solid transparent;
         border-top: 40px solid $main-gray-lighter;
         border-left: 40px solid $main-gray-lighter;
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          display: none;
+        }
       }
     }
     &--item {
@@ -33,6 +63,10 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 110px;
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        flex-direction: column;
+        margin-bottom: 70px;
+      }
       &--person {
         display: flex;
         flex-direction: column;
@@ -42,18 +76,46 @@
         img {
           width: 302px;
           margin-bottom: 22px;
+          @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+            width: 250px;
+          }
+          @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+            width: 200px;
+          }
+          @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+            width: 170px;
+          }
         }
         .help-person-name {
           max-width: 350px;
           margin-bottom: 15px;
           font-size: 30px;
           color: $main-gray;
+          @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+            font-size: 20px;
+          }
+          @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+            font-size: 18px;
+          }
+          @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+            font-size: 16px;
+          }
         }
         .help-person-position {
           max-width: 230px;
           font-size: 24px;
           line-height: 29px;
           color: $main-gray;
+          @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+            font-size: 14px;
+          }
+          @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+            font-size: 14px;
+          }
+          @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+            font-size: 12px;
+            line-height: 17px;
+          }
         }
       }
       &--advice {
@@ -61,11 +123,40 @@
         max-width: 1000px;
         border-radius: 35px;
         background-color: #f6f2f1;
+        @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+          max-width: 850px;
+        }
+        @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+          max-width: 700px;
+        }
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          margin-top: 40px;
+          right: 0;
+        }
         .advice--inner {
           padding: 64px 100px 63px 85px;
+          @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+            padding: 44px 80px 43px 65px;
+          }
+          @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+            padding: 33px 70px 33px 55px;
+          }
+          @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+            padding: 23px 60px 23px 45px;
+          }
           &--title {
             font-size: 40px;
             line-height: 48px;
+            @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+              font-size: 30px;
+            }
+            @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+              font-size: 20px;
+            }
+            @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+              font-size: 18px;
+              line-height: 40px;
+            }
           }
           &--quote {
             position: relative;
@@ -74,11 +165,35 @@
             font-size: 24px;
             line-height: 30px;
             color: $main-gray;
+            @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+              font-size: 15px;
+            }
+            @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+              margin-top: 15px;
+              font-size: 15px;
+            }
+            @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+              margin-top: 5px;
+              font-size: 15px;
+              line-height: 21px;
+            }
             img {
               position: absolute;
               width: 27px;
               top: -5px;
               left: -40px;
+              @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+                width: 20px;
+                left: -25px;
+              }
+              @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+                width: 18px;
+                left: -20px;
+              }
+              @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+                width: 18px;
+                left: -20px;
+              }
             }
           }
           &--more {
@@ -86,6 +201,15 @@
             font-size: 25px;
             line-height: 30px;
             color: $orange;
+            @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+              font-size: 15px;
+            }
+            @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+              font-size: 15px;
+            }
+            @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+              font-size: 15px;
+            }
           }
         }
       }
@@ -97,6 +221,14 @@
         border: 40px solid transparent;
         border-top: 40px solid $main-gray-lighter;
         border-right: 40px solid $main-gray-lighter;
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          top: -30px;
+          left: 90px;
+          border-right: 0;
+          border: 20px solid transparent;
+          border-bottom: 20px solid $main-gray-lighter;
+          border-right: 20px solid $main-gray-lighter;
+        }
       }
     }
     .more-usecase {
@@ -104,6 +236,16 @@
       margin-bottom: 104px;
       font-size: 24px;
       line-height: 30px;
+      @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+        font-size: 20px;
+      }
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        font-size: 18px;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        font-size: 15px;
+        margin-bottom: 50px;
+      }
       a {
         text-decoration: none;
         color: $orange;
@@ -116,36 +258,95 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
     }
     &--fact {
       max-width: 300px;
       padding: 117px 0;
+      @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+        max-width: 250px;
+        padding: 80px 0;
+      }
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        max-width: 200px;
+        padding: 70px 0;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        max-width: 180px;
+        padding: 30px;
+      }
       span {
         font-size: 60px;
         line-height: 72px;
         color: $orange;
+        @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+          font-size: 50px;
+        }
+        @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+          font-size: 30px;
+          line-height: 60px;
+        }
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          font-size: 25px;
+          line-height: 40px;
+        }
       }
       p {
         font-size: 24px;
         line-height: 28px;
         color: $white;
+        @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+          font-size: 18px;
+        }
+        @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+          font-size: 18px;
+        }
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          font-size: 13px;
+          line-height: 20px;
+        }
       }
     }
   }
   .info {
     &--title {
-      width: 1233px;
-      max-width: 100%;
+      max-width: 1233px;
+      width: 100%;
       padding-top: 80px;
       margin-bottom: 83px;
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        padding-top: 60px;
+        margin-bottom: 63px;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        padding-top: 40px;
+        margin-bottom: 43px;
+      }
       .info-ttl {
         font-size: 40px;
+        @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+          font-size: 30px;
+        }
+        @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+          font-size: 20px;
+        }
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          font-size: 18px;
+        }
       }
       p {
         font-size: 24px;
         line-height: 30px;
         margin-top: 10px;
+        @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+          font-size: 18px;
+        }
+        @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+          font-size: 16px;
+        }
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
     }
     .courses {
@@ -153,23 +354,69 @@
       flex-direction: row;
       justify-content: space-between;
       margin-bottom: 110px;
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        margin-bottom: 90px;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        margin-bottom: 60px;
+      }
       .course {
         max-width: 450px;
+        @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+          max-width: 400px;
+        }
+        @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+          max-width: 300px;
+        }
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          max-width: 220px;
+        }
         &--title {
           margin-bottom: 15px;
           font-size: 25px;
           line-height: 30px;
+          @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+            font-size: 20px;
+          }
+          @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+            font-size: 20px;
+          }
+          @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+            margin-bottom: 10px;
+            font-size: 18px;
+          }
         }
         &--information {
           font-size: 24px;
           line-height: 30px;
           margin-bottom: 25px;
+          @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+            font-size: 19px;
+          }
+          @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+            margin-bottom: 15px;
+            font-size: 18px;
+          }
+          @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 20px;
+          }
         }
         &--link {
           text-decoration: none;
           font-size: 25px;
           line-height: 30px;
           color: $orange;
+          @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+            font-size: 20px;
+          }
+          @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+            font-size: 18px;
+          }
+          @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -177,6 +424,12 @@
 }
 .partners {
   margin: 90px 0;
+  @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+    margin: 70px 0;
+  }
+  @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+    margin: 50px 0;
+  }
   &--items {
     display: flex;
     flex-direction: column;
@@ -189,12 +442,24 @@
     }
     .partner-item {
       margin: 0 45px;
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        margin: 0 35px;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        margin: 0 20px;
+      }
       img {
         width: auto;
         height: 100px;
         margin: 0 auto;
         filter: grayscale(100%);
         transition: .1s ease-in-out;
+        @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+          height: 80px;
+        }
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          height: 60px;
+        }
         &:hover {
           filter: none;
           transform: scale(1.1);
@@ -203,16 +468,33 @@
     }
   }
   &--text {
-    width: 850px;
+    max-width: 850px;
     margin: 0 auto;
     text-align: center;
     font-size: 40px;
+    @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+      font-size: 30px;
+    }
+    @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+      max-width: 800px;
+      font-size: 20px;
+    }
+    @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+      max-width: 600px;
+      font-size: 18px;
+    }
     p {
       margin-bottom: 10px;
     }
     a {
       display: inline-block;
       margin-top: 50px;
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        margin-top: 30px;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        margin-top: 20px;
+      }
     }
   }
 }

@@ -4,11 +4,26 @@
   margin-top: -65px;
   background-color: $main-gray-lighter;
   &--title {
-    width: 1233px;
-    max-width: 100%;
+    max-width: 1233px;
+    width: 100%;
     padding-top: 80px;
     margin-bottom: 160px;
     font-size: 40px;
+    @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+      padding-top: 100px;
+      margin-bottom: 100px;
+      font-size: 30px;
+    }
+    @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+      padding-top: 100px;
+      margin-bottom: 90px;
+      font-size: 25px;
+    }
+    @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+      padding-top: 90px;
+      margin-bottom: 50px;
+      font-size: 18px;
+    }
     p {
       margin-bottom: 10px;
     }
@@ -19,35 +34,102 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 141px;
+    @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+      justify-content: space-around;
+    }
     .adv-item {
-      width: 400px;
-      max-width: 100%;
+      max-width: 400px;
+      width: 100%;
       margin-bottom: 100px;
       font-size: 24px;
       line-height: 30px;
+      @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+        font-size: 19px;
+      }
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        max-width: 300px;
+        margin-bottom: 60px;
+        font-size: 17px;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        max-width: 300px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 20px;
+      }
       .adv-inner {
         padding: 0 10px;
-        width: 370px;
+        max-width: 370px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+          max-width: 320px;
+          font-size: 19px;
+        }
+        @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+          width: 280px;
+          font-size: 17px;
+        }
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          max-width: 280px;
+          margin-bottom: 30px;
+          font-size: 15px;
+        }
+        img {
+          @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+            width: 45px;
+          }
+        }
       }
       span {
         height: 100%;
         max-height: 50px;
         margin-top: 40px;
         margin-bottom: 30px;
+        @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+          margin: 18px 0;
+        }
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          margin: 12px 0;
+        }
       }
     }
     .adv-last {
       margin: -61px -20px -61px -51px;
-      width: 500px;
-      max-width: 100%;
+      max-width: 500px;
+      width: 100%;
       background-color: #272b30;
       border-radius: 50px;
       color: $white;
+      @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+        max-width: 450px;
+        margin: -51px -18px -51px -41px;
+      }
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        max-width: 350px;
+        margin: -25px -12px -45px -35px;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        margin: -20px 0 0 0;
+        max-width: 300px;
+      }
       .adv-ls {
           margin: 61px 28px 61px 51px;
+          @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+            margin: 51px 18px 51px 41px;
+          }
+          @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+            margin: 25px 12px 45px 35px;
+          }
+          @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+            margin: 20px;
+          }
         p {
           margin-bottom: 40px;
         }

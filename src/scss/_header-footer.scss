@@ -9,11 +9,29 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+      top: 50px;
+    }
+    @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+      top: 30px;
+    }
+    @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+      top: 20px;
+    }
     a {
       text-decoration: none;
       font-weight: 300;
       color: $white;
       font-size: 21px;
+      @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+        font-size: 17px;
+      }
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        font-size: 16px;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        font-size: 14px;
+      }
     }
     &--logo {
       a {
@@ -25,6 +43,9 @@
         width: 58px;
         max-width: 100%;
         margin-right: 14px;
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          width: 50px;
+        }
       }
     }
     .button-primary {
@@ -37,22 +58,50 @@
   background-color: $main-gray-lighter;
   &--top {
     padding-bottom: 130px;
+    @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+      padding-bottom: 80px;
+    }
+    @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+      padding-bottom: 60px;
+    }
     &--inner {
       padding: 0 40px;
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        padding: 0 30px;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        padding: 0;
+      }
     }
     &--title {
       padding-top: 90px;
       padding-bottom: 40px;
       font-size: 40px;
       color: $main-gray;
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-size: 30px;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        padding-top: 20px;
+        padding-bottom: 15px;
+        font-size: 20px;
+      }
     }
     &--form {
       .form-row {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          flex-direction: column;
+        }
         .field__wrap {
           width: 47%;
+          @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+            width: 100%;
+          }
         }
       }
       .form-btn {
@@ -64,6 +113,9 @@
         display: block;
         margin-top: 10px;
         margin-bottom: 25px;
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          margin-bottom: 15px;
+        }
       }
 
       .field__label {
@@ -91,6 +143,13 @@
         height: 60px;
         font-weight: 500;
         outline: none;
+        @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+          height: 50px;
+        }
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          height: 40px;
+          font-size: 14px;
+        }
       }
       .custom-placeholder-active .field {
       }
@@ -98,6 +157,9 @@
         padding-top: 0px;
         margin-top: -25px;
         padding-left: 10px;
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          margin-top: -21px;
+        }
       }
       .custom-placeholder {
         position: absolute;
@@ -110,12 +172,16 @@
         font-weight: normal;
         font-size: 16px;
         color: $main-gray;
+        @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+          padding-top: 16px;
+        }
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          padding-top: 10px;
+          font-size: 14px;
+        }
       }
       .custom-placeholder  span {
         color: $orange;
-      }
-      .custom-placeholder-active .textarea-custom-placeholder{
-        top: 2px;
       }
     }
     select {
@@ -136,12 +202,25 @@
       appearance: none;
       position: relative;
       display: inline-block;
+
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        height: 50px;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        height: 40px;
+      }
     }
     .select:after {
       content: url("../images/down-arrow.svg");
       position: absolute;
       right: 18px;
       top: 20px;
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        top: 15px;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        top: 10px;
+      }
     }
     .form--bottom {
       display: flex;
@@ -154,8 +233,17 @@
         flex-direction: column;
         color: #4c4e52;
         font-size: 16px;
+        @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+          font-size: 14px;
+        }
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          font-size: 14px;
+        }
         div {
           margin-top: 13px;
+          @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+            margin-top: 8px;
+          }
         }
         label {
           font-weight: 300;
@@ -171,12 +259,20 @@
             display: inline-block;
             width: 16px;
             height: 16px;
-            background: url("../images/yes.svg") 50% 50% no-repeat;
             margin-bottom: -3px;
             margin-right: 13px;
+            @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+              width: 14px;
+              height: 14px;
+            }
+            @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+              width: 12px;
+              height: 12px;
+            }
         }
         input[type="checkbox"]:checked + label:before {
             background-position: 0 -32px;
+            background: url("../images/yes.svg") 50% 50% no-repeat;
         }
         .txt-orange {
           color: $orange;
@@ -192,20 +288,43 @@
       justify-content: space-between;
       align-items: center;
       padding: 60px 0;
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        padding: 40px 0;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        padding: 20px 0;
+      }
     }
     &--text {
       max-width: 1300px;
       width: 100%;
       color: #4c4e52;
       font-size: 16px;
+      @media (max-width: 1599px) and (min-width: $DESKTOP_L) {
+        max-width: 1000px;
+      }
+      @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+        max-width: 800px;
+        font-size: 14px;
+      }
+      @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+        font-size: 14px;
+      }
     }
     &--links {
       display: flex;
       flex-direction: row;
+      flex-wrap: nowrap;
       align-items: center;
       li {
         list-style-type: none;
         margin-left: 40px;
+        @media (max-width: $DESKTOP_L - 1px) and (min-width: $DESKTOP_START) {
+          margin-left: 20px;
+        }
+        @media (max-width: $DESKTOP_START - 1px) and (min-width: $TABLET_START) {
+          margin-left: 20px;
+        }
         a {
           text-decoration: none;
         }
